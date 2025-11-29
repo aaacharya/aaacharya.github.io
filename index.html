@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ayush Acharya – Time Freedom & Autonomy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="min-h-screen bg-stone-50 text-stone-900 relative">
+    <!-- Subtle beige radial glow background -->
+    <div
+      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(245,240,235,0.6),_transparent_45%)]"
+    ></div>
+
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 backdrop-blur bg-white/70 border-b border-stone-200"
+    >
+      <div
+        class="mx-auto max-w-7xl px-5 py-3 flex items-center justify-between gap-4"
+      >
+        <a href="#" class="flex items-center gap-3">
+          <img
+            src="https://placehold.co/120x40?text=AA"
+            alt="Logo"
+            class="h-6"
+          />
+          <span class="font-semibold">Ayush Acharya</span>
+        </a>
+
+        <!-- Nav -->
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#blog" class="text-stone-600 hover:text-stone-900">Blog</a>
+          <a href="#videos" class="text-stone-600 hover:text-stone-900"
+            >Videos</a
+          >
+          <a href="#newsletter" class="text-stone-600 hover:text-stone-900"
+            >Newsletter</a
+          >
+          <a href="#courses" class="text-stone-600 hover:text-stone-900"
+            >Courses</a
+          >
+          <a href="#about" class="text-stone-600 hover:text-stone-900">About</a>
+        </nav>
+
+        <!-- Actions -->
+        <div class="flex items-center gap-3">
+          <button
+            class="hidden sm:inline-flex items-center gap-2 rounded-full border border-stone-300 px-3 py-1.5 text-sm"
+            type="button"
+          >
+            <span
+              class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[10px]"
+              >⌕</span
+            >
+            <span>Search</span>
+          </button>
+          <a
+            href="#newsletter"
+            class="inline-flex items-center gap-2 rounded-full bg-amber-900 text-white px-4 py-2 text-sm hover:bg-amber-800"
+          >
+            <span
+              class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-white/40 text-[9px]"
+              >✉</span
+            >
+            <span>Subscribe</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <img
+          src="images/6.png"
+          alt="Hero"
+          class="h-full w-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-stone-50 via-white/70 to-white/30"
+        ></div>
+      </div>
+
+      <div class="mx-auto max-w-7xl px-5 py-20 md:py-28">
+        <div class="max-w-3xl">
+          <h1
+            class="text-4xl md:text-6xl font-bold tracking-tight opacity-100 translate-y-0"
+          >
+            Build a life around time freedom and autonomy.
+          </h1>
+          <p class="mt-5 text-lg text-stone-700 max-w-2xl">
+            I’m Ayush Acharya. I share systems for researchers and students to
+            do great work, earn time freedom, and build creator businesses—
+            without burning out.
+          </p>
+          <div class="mt-8 flex flex-wrap items-center gap-3">
+            <a
+              href="#blog"
+              class="inline-flex items-center gap-2 rounded-2xl bg-amber-900 text-white px-5 py-3 font-medium hover:bg-amber-800"
+            >
+              <span>📖</span>
+              <span>Start here</span>
+            </a>
+            <a
+              href="#newsletter"
+              class="inline-flex items-center gap-2 rounded-2xl border border-stone-300 px-5 py-3 font-medium bg-white/60"
+            >
+              <span>📰</span>
+              <span>Join the Newsletter</span>
+            </a>
+          </div>
+          <div class="mt-8 flex items-center gap-3 text-sm text-stone-600">
+            <img
+              src="https://placehold.co/96x96/png"
+              alt="Ayush"
+              class="h-10 w-10 rounded-full"
+            />
+            <span>Join 5,000+ students &amp; researchers reading every Sunday.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Highlight -->
+    <section id="newsletter" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div
+          class="flex items-center justify-center gap-2 text-sm text-stone-600"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+            >✉</span
+          >
+          <span class="uppercase tracking-[0.2em] text-xs">Newsletter</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold mt-3">
+          The Sunday Systems Letter
+        </h2>
+        <p class="text-stone-600 mt-3">
+          Actionable insights on research, systems, and lifestyle design. No
+          fluff. Sundays.
+        </p>
+      </div>
+
+      <form
+        class="w-full max-w-xl mx-auto mt-6 grid grid-cols-1 gap-3 sm:grid-cols-[1fr_auto]"
+      >
+        <input
+          class="w-full rounded-2xl border border-stone-200 bg-white/80 px-4 py-3 outline-none focus:ring-2 focus:ring-amber-900 text-sm"
+          type="email"
+          placeholder="Enter your email"
+          required
+        />
+        <button
+          type="submit"
+          class="rounded-2xl px-5 py-3 font-medium bg-amber-900 text-white hover:bg-amber-800 flex items-center justify-center gap-2 text-sm"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-white/40 text-[9px]"
+            >✉</span
+          >
+          <span>Subscribe</span>
+        </button>
+        <p class="text-xs text-stone-600 sm:col-span-2">
+          By subscribing, you agree to receive emails. Unsubscribe anytime.
+        </p>
+      </form>
+    </section>
+
+    <!-- Featured Posts -->
+    <section id="blog" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div
+          class="flex items-center justify-center gap-2 text-sm text-stone-600"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+            >✍</span
+          >
+          <span class="uppercase tracking-[0.2em] text-xs">Featured</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold mt-3">
+          Popular from the blog
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+1"
+              alt="My PhD Systems"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Deep Dive
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              My PhD Systems: How I manage research, writing, and YouTube
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+2"
+              alt="Time Freedom vs Autonomy"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Essay
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              Time Freedom vs Autonomy: Designing a life that fits
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+3"
+              alt="Notion Research OS"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Toolkit
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              Notion Research OS: The complete setup (free template)
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+4"
+              alt="ChemDraw in 60 minutes"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Tutorial
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              ChemDraw in 60 minutes: From zero to figures
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+5"
+              alt="How I read papers fast"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Method
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              How I read papers fast (and remember them)
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Card 6 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/600x400/png?text=Feature+6"
+              alt="Productive Desk Setup"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <div
+              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
+            >
+              Gear
+            </div>
+            <h3 class="mt-2 text-lg font-semibold leading-snug">
+              Productive Desk Setup on a Student Budget
+            </h3>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
+            >
+              <span>Read more</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div
+          class="flex items-center justify-center gap-2 text-sm text-stone-600"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+            >🎓</span
+          >
+          <span class="uppercase tracking-[0.2em] text-xs">Courses</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold mt-3">
+          Level up your toolkit
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Course 1 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/800x500/png?text=Course:+ChemDraw+Mastery"
+              alt="ChemDraw Masterclass"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">ChemDraw Masterclass</h3>
+            <p class="mt-2 text-stone-600 text-sm">
+              Pro-looking reaction schemes, mechanisms, and figures.
+            </p>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-700 group-hover:text-stone-900"
+            >
+              <span>Explore course</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 2 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/800x500/png?text=Course:+LaTeX+for+Scientists"
+              alt="LaTeX for Scientists"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">LaTeX for Scientists</h3>
+            <p class="mt-2 text-stone-600 text-sm">
+              From templates to submissions without tears.
+            </p>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-700 group-hover:text-stone-900"
+            >
+              <span>Explore course</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Course 3 -->
+        <a
+          href="#"
+          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
+        >
+          <div class="aspect-[16/10] w-full overflow-hidden">
+            <img
+              src="https://placehold.co/800x500/png?text=Course:+Python+Automation"
+              alt="Python & Automation for Research"
+              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold">
+              Python &amp; Automation for Research
+            </h3>
+            <p class="mt-2 text-stone-600 text-sm">
+              Data, plots, and workflows that run themselves.
+            </p>
+            <div
+              class="mt-3 inline-flex items-center text-sm text-stone-700 group-hover:text-stone-900"
+            >
+              <span>Explore course</span>
+              <span class="ml-2 text-xs">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Podcast -->
+    <section id="podcast" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div
+          class="flex items-center justify-center gap-2 text-sm text-stone-600"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+            >🎙</span
+          >
+          <span class="uppercase tracking-[0.2em] text-xs">Podcast</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold mt-3">
+          Conversations on research, systems, &amp; creative careers
+        </h2>
+      </div>
+
+      <a href="#" class="block group rounded-3xl overflow-hidden relative">
+        <div class="relative">
+          <img
+            src="https://placehold.co/1600x400/png?text=Podcast+Banner"
+            alt="Podcast"
+            class="w-full object-cover"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-tr from-black/40 to-transparent"
+          ></div>
+          <div class="absolute bottom-6 left-6 text-white max-w-3xl">
+            <div
+              class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-sm backdrop-blur"
+            >
+              <span>▶</span>
+              <span>Latest episode</span>
+            </div>
+            <h3 class="mt-3 text-2xl md:text-3xl font-semibold">
+              Designing a PhD around time freedom
+            </h3>
+          </div>
+        </div>
+      </a>
+    </section>
+
+    <!-- YouTube -->
+    <section id="videos" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="max-w-3xl mx-auto text-center mb-10">
+        <div
+          class="flex items-center justify-center gap-2 text-sm text-stone-600"
+        >
+          <span
+            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+            >▶</span
+          >
+          <span class="uppercase tracking-[0.2em] text-xs">YouTube</span>
+        </div>
+        <h2 class="text-3xl md:text-4xl font-semibold mt-3">
+          Watch recent videos
+        </h2>
+        <p class="text-stone-600 mt-3">
+          Long-form breakdowns and simple how-tos.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+        <!-- YT 1 -->
+        <div class="rounded-3xl overflow-hidden bg-white shadow-sm">
+          <div
+            class="aspect-video bg-stone-200 grid place-items-center text-stone-600"
+          >
+            <span class="text-3xl">▶</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-sm md:text-base">
+              Video title placeholder #1
+            </h3>
+            <p class="text-sm text-stone-600 mt-1">
+              Add your YouTube video URL or embed here.
+            </p>
+          </div>
+        </div>
+
+        <!-- YT 2 -->
+        <div class="rounded-3xl overflow-hidden bg-white shadow-sm">
+          <div
+            class="aspect-video bg-stone-200 grid place-items-center text-stone-600"
+          >
+            <span class="text-3xl">▶</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-sm md:text-base">
+              Video title placeholder #2
+            </h3>
+            <p class="text-sm text-stone-600 mt-1">
+              Add your YouTube video URL or embed here.
+            </p>
+          </div>
+        </div>
+
+        <!-- YT 3 -->
+        <div class="rounded-3xl overflow-hidden bg-white shadow-sm">
+          <div
+            class="aspect-video bg-stone-200 grid place-items-center text-stone-600"
+          >
+            <span class="text-3xl">▶</span>
+          </div>
+          <div class="p-5">
+            <h3 class="font-semibold text-sm md:text-base">
+              Video title placeholder #3
+            </h3>
+            <p class="text-sm text-stone-600 mt-1">
+              Add your YouTube video URL or embed here.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="mx-auto max-w-7xl px-5 py-16">
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <div class="max-w-xl mb-5">
+            <div
+              class="flex items-center gap-2 text-sm text-stone-600 mb-2 justify-start"
+            >
+              <span
+                class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
+                >🚀</span
+              >
+              <span class="uppercase tracking-[0.2em] text-xs">About</span>
+            </div>
+            <h2 class="text-3xl md:text-4xl font-semibold">Hey, I’m Ayush 👋</h2>
+          </div>
+          <p class="text-stone-700 leading-relaxed text-sm md:text-base">
+            I’m a fifth-year PhD student and part-time YouTuber. I share
+            playbooks for doing high-quality research, building a creator
+            business, and living with autonomy. On this site you’ll find essays,
+            videos, and courses that help you earn back your time while moving
+            your work forward.
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-3">
+            <a
+              href="#newsletter"
+              class="rounded-2xl bg-amber-900 text-white px-5 py-3 font-medium inline-flex items-center gap-2 hover:bg-amber-800 text-sm"
+            >
+              <span>✉</span>
+              <span>Join the newsletter</span>
+            </a>
+            <a
+              href="#blog"
+              class="rounded-2xl border border-stone-300 px-5 py-3 font-medium inline-flex items-center gap-2 bg-white/60 text-sm"
+            >
+              <span>📖</span>
+              <span>Read the blog</span>
+            </a>
+          </div>
+        </div>
+        <div
+          class="rounded-3xl overflow-hidden bg-white shadow-sm aspect-[4/3] grid place-items-center text-stone-300 text-4xl"
+        >
+          📷
+          <!-- Replace with your portrait / collage -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-stone-200 bg-white">
+      <div
+        class="mx-auto max-w-7xl px-5 py-10 grid md:grid-cols-5 gap-6 text-sm"
+      >
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3">
+            <img
+              src="https://placehold.co/120x40?text=AA"
+              alt="Logo"
+              class="h-6"
+            />
+            <span class="font-semibold">Ayush Acharya</span>
+          </div>
+          <p class="mt-3 text-sm text-stone-600 max-w-sm">
+            Essays, videos, and courses on research systems, creative careers,
+            and time freedom.
+          </p>
+          <div class="mt-4 flex items-center gap-3 flex-wrap">
+            <a
+              href="https://x.com/"
+              aria-label="Twitter"
+              class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
+              >X</a
+            >
+            <a
+              href="https://youtube.com/"
+              aria-label="YouTube"
+              class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
+              >▶</a
+            >
+            <a
+              href="https://instagram.com/"
+              aria-label="Instagram"
+              class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
+              >◎</a
+            >
+            <a
+              href="https://linkedin.com/"
+              aria-label="LinkedIn"
+              class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
+              >in</a
+            >
+            <a
+              href="https://github.com/"
+              aria-label="GitHub"
+              class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
+              >GH</a
+            >
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 md:col-span-3 gap-6">
+          <div class="space-y-2">
+            <h4 class="font-medium">Navigate</h4>
+            <div class="flex flex-col gap-1 text-stone-600">
+              <a href="#blog" class="hover:text-stone-900">Blog</a>
+              <a href="#videos" class="hover:text-stone-900">Videos</a>
+              <a href="#courses" class="hover:text-stone-900">Courses</a>
+              <a href="#newsletter" class="hover:text-stone-900">Newsletter</a>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h4 class="font-medium">Company</h4>
+            <div class="flex flex-col gap-1 text-stone-600">
+              <a href="#about" class="hover:text-stone-900">About</a>
+              <a href="#" class="hover:text-stone-900">Sponsor</a>
+              <a href="#" class="hover:text-stone-900">Contact</a>
+              <a href="#" class="hover:text-stone-900">Privacy</a>
+            </div>
+          </div>
+          <div class="space-y-2">
+            <h4 class="font-medium">Resources</h4>
+            <div class="flex flex-col gap-1 text-stone-600">
+              <a href="#" class="hover:text-stone-900">Free templates</a>
+              <a href="#" class="hover:text-stone-900">Favorites</a>
+              <a href="#" class="hover:text-stone-900">Press Kit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="border-t border-stone-200 py-6 text-center text-xs text-stone-500"
+      >
+        © 2025 Ayush Acharya. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
