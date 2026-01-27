@@ -7,13 +7,16 @@
     <meta charset="UTF-8" />
     <title>Ayush Acharya – Time Freedom & Autonomy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script> tailwind.config = { theme: { extend: { colors: { primary: '#000000', secondary: '#dbc9f5' } } } } </script>
   </head>
-  <body class="min-h-screen bg-stone-50 text-stone-900 relative">
+  <body class="min-h-screen bg-secondary text-stone-900 relative">
+
     <!-- Subtle beige radial glow background -->
     <div
-      class="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(245,240,235,0.6),_transparent_45%)]"
+      class="pointer-events-none fixed inset-0 -z-10 bg-gradient-to-b from-sky-50 to-fuchsia-50"
     ></div>
 
     <!-- Header -->
@@ -25,52 +28,51 @@
       >
         <a href="#" class="flex items-center gap-3">
           <img
-            src="https://placehold.co/120x40?text=AA"
+            src="Images/256X256.svg"
             alt="Logo"
             class="h-6"
           />
-          <span class="font-semibold">Ayush Acharya</span>
+          <span class="font-semibold bg-gradient-to-l from-neutral-300 to-stone-400 bg-clip-text text-transparent">AYUSH ACHARYA</span>
         </a>
 
         <!-- Nav -->
         <nav class="hidden md:flex items-center gap-6 text-sm">
-          <a href="#blog" class="text-stone-600 hover:text-stone-900">Blog</a>
-          <a href="#videos" class="text-stone-600 hover:text-stone-900"
+          <a href="#blog" class="text-stone-500 hover:text-stone-900">Blog</a>
+          <a href="#videos" class="text-stone-500 hover:text-stone-900"
             >Videos</a
           >
-          <a href="#newsletter" class="text-stone-600 hover:text-stone-900"
+          <a href="#newsletter" class="text-stone-500 hover:text-stone-900"
             >Newsletter</a
           >
-          <a href="#courses" class="text-stone-600 hover:text-stone-900"
+          <a href="#courses" class="text-stone-500 hover:text-stone-900"
             >Courses</a
           >
-          <a href="#about" class="text-stone-600 hover:text-stone-900">About</a>
+          <a href="#about" class="text-stone-500 hover:text-stone-900">About</a>
         </nav>
 
         <!-- Actions -->
         <div class="flex items-center gap-3">
-          <button
-            class="hidden sm:inline-flex items-center gap-2 rounded-full border border-stone-300 px-3 py-1.5 text-sm"
-            type="button"
-          >
-            <span
-              class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[10px]"
-              >⌕</span
-            >
-            <span>Search</span>
-          </button>
-          <a
-            href="#newsletter"
-            class="inline-flex items-center gap-2 rounded-full bg-amber-900 text-white px-4 py-2 text-sm hover:bg-amber-800"
-          >
-            <span
-              class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-white/40 text-[9px]"
-              >✉</span
-            >
-            <span>Subscribe</span>
-          </a>
-        </div>
-      </div>
+  <!-- Search Button -->
+  <button
+    type="button"
+    class="hidden sm:inline-flex items-center rounded-full px-4 py-2 text-sm font-medium 
+            bg-gradient-to-r from-slate-200 to-orange-50
+            text-stone-700 hover:opacity-90 transition"
+  >
+    Search
+  </button>
+
+  <!-- Subscribe Button -->
+  <a
+    href="#newsletter"
+    class="inline-flex items-center rounded-full px-4 py-2 text-sm font-medium
+           bg-gradient-to-r from-slate-200 to-orange-50
+           text-stone-700 hover:opacity-90 transition"
+  >
+    Subscribe
+  </a>
+</div>
+
     </header>
 
     <!-- Hero -->
@@ -89,39 +91,43 @@
       <div class="mx-auto max-w-7xl px-5 py-20 md:py-28">
         <div class="max-w-3xl">
           <h1
-            class="text-4xl md:text-6xl font-bold tracking-tight opacity-100 translate-y-0"
+            class="text-4xl md:text-6xl font-bold tracking-tight opacity-100 translate-y-0 bg-gradient-to-l from-neutral-300 to-stone-400 bg-clip-text text-transparent"
           style="font-family: 'Inter', sans-serif;"
             >
             Build a life around time freedom and autonomy. 
           </h1>
           <p class="mt-5 text-lg text-stone-700 max-w-2xl">
             I am Ayush Acharya. I share systems for researchers and students to
-            do great work, earn time freedom, and build creator businesses—
+            do great work, earn time freedom, and build creator businesses -
             without burning out.
           </p>
           <div class="mt-8 flex flex-wrap items-center gap-3">
             <a
               href="#blog"
-              class="inline-flex items-center gap-2 rounded-2xl bg-amber-900 text-white px-5 py-3 font-medium hover:bg-amber-800"
+              class="hidden sm:inline-flex items-center rounded-full px-4 py-2 text-sm font-medium
+           bg-gradient-to-r from-slate-200 to-orange-50
+           text-stone-700 hover:opacity-90 transition"
             >
-              <span>📖</span>
+              <span> </span>
               <span>Start here</span>
             </a>
             <a
               href="#newsletter"
-              class="inline-flex items-center gap-2 rounded-2xl border border-stone-300 px-5 py-3 font-medium bg-white/60"
+              class="hidden sm:inline-flex items-center rounded-full px-4 py-2 text-sm font-medium
+           bg-gradient-to-r from-slate-200 to-orange-50
+           text-stone-700 hover:opacity-90 transition"
             >
-              <span>📰</span>
+              <span> </span>
               <span>Join the Newsletter</span>
             </a>
           </div>
-          <div class="mt-8 flex items-center gap-3 text-sm text-stone-600">
+          <div class="mt-8 flex items-center gap-3 text-sm text-stone-500">
             <img
-              src="https://placehold.co/96x96/png"
+              src="Images/96X96.svg"
               alt="Ayush"
               class="h-10 w-10 rounded-full"
             />
-            <span>Join 5,000+ students &amp; researchers reading every Sunday.</span>
+            <span>Join students &amp; researchers reading every Sunday.</span>
           </div>
         </div>
       </div>
@@ -133,16 +139,12 @@
         <div
           class="flex items-center justify-center gap-2 text-sm text-stone-600"
         >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-            >✉</span
-          >
           <span class="uppercase tracking-[0.2em] text-xs">Newsletter</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-semibold mt-3">
           The Sunday Systems Letter
         </h2>
-        <p class="text-stone-600 mt-3">
+        <p class="text-stone-700 mt-3">
           Actionable insights on research, systems, and lifestyle design. No
           fluff. Sundays.
         </p>
@@ -158,16 +160,19 @@
           required
         />
         <button
-          type="submit"
-          class="rounded-2xl px-5 py-3 font-medium bg-amber-900 text-white hover:bg-amber-800 flex items-center justify-center gap-2 text-sm"
-        >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-white/40 text-[9px]"
-            >✉</span
-          >
-          <span>Subscribe</span>
-        </button>
-        <p class="text-xs text-stone-600 sm:col-span-2">
+  type="submit"
+  class="rounded-2xl px-4 py-3 text-sm font-medium
+         bg-gradient-to-r from-orange-50 to-slate-200
+         text-stone-700
+         flex items-center justify-center
+         backdrop-blur-md
+         border border-white/40
+         shadow-sm
+         hover:opacity-90 transition"
+>
+  Subscribe
+</button>
+        <p class="text-xs text-stone-700 sm:col-span-2">
           By subscribing, you agree to receive emails. Unsubscribe anytime.
         </p>
       </form>
@@ -179,10 +184,6 @@
         <div
           class="flex items-center justify-center gap-2 text-sm text-stone-600"
         >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-            >✍</span
-          >
           <span class="uppercase tracking-[0.2em] text-xs">Featured</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-semibold mt-3">
@@ -191,185 +192,317 @@
       </div>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
         <!-- Card 1 -->
         <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+1"
-              alt="My PhD Systems"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Deep Dive
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              My PhD Systems: How I manage research, writing, and YouTube
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+  href="https://ayushacharya.substack.com/p/the-identity-lag-why-high-performers?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft highlight sheen -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/blackandwhite.png"
+      alt="My PhD Systems"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Reflection
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      Why High Performers Suffer From Imposter Syndrome
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read more</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
 
         <!-- Card 2 -->
         <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+2"
-              alt="Time Freedom vs Autonomy"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Essay
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              Time Freedom vs Autonomy: Designing a life that fits
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+  href="https://ayushacharya.substack.com/p/25-at-25-a-quarter-life-reflection?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/card2.png"
+      alt="Time Freedom vs Autonomy"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Reflection
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      25 Lessons I have Learned by 25
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read More</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
 
         <!-- Card 3 -->
-        <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+3"
-              alt="Notion Research OS"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Toolkit
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              Notion Research OS: The complete setup (free template)
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+       <a
+  href="https://ayushacharya.substack.com/p/the-odyssey-of-becoming-06-29-2025?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/card3.png"
+      alt="Notion Research OS"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Life Design
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      My Odyssey Plan
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read More</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
+
 
         <!-- Card 4 -->
         <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+4"
-              alt="ChemDraw in 60 minutes"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Tutorial
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              ChemDraw in 60 minutes: From zero to figures
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+  href="https://ayushacharya.substack.com/p/what-i-learned-starting-a-business?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/card4.png"
+      alt="ChemDraw in 60 minutes"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Business
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      What I Learned Starting a Business
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read more</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
+
 
         <!-- Card 5 -->
         <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+5"
-              alt="How I read papers fast"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Method
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              How I read papers fast (and remember them)
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+  href="https://ayushacharya.substack.com/p/4-am-vs-me-06-08-2025?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- liquid highlight layer -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/card5.png"
+      alt="My Struggle of waking up at 4 AM"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <!-- tag pill -->
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Routine
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      My Struggle of waking up at 4 AM
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read more</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
+
 
         <!-- Card 6 -->
         <a
-          href="#"
-          class="group block rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-        >
-          <div class="aspect-[16/10] w-full overflow-hidden">
-            <img
-              src="https://placehold.co/600x400/png?text=Feature+6"
-              alt="Productive Desk Setup"
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-          </div>
-          <div class="p-5">
-            <div
-              class="text-[11px] uppercase tracking-[0.18em] text-stone-500"
-            >
-              Gear
-            </div>
-            <h3 class="mt-2 text-lg font-semibold leading-snug">
-              Productive Desk Setup on a Student Budget
-            </h3>
-            <div
-              class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900"
-            >
-              <span>Read more</span>
-              <span class="ml-2 text-xs">→</span>
-            </div>
-          </div>
-        </a>
+  href="https://ayushacharya.substack.com/p/the-dream-of-time-freedom?r=5o7aoa"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- liquid highlight layer -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- image -->
+  <div class="relative aspect-[16/10] w-full overflow-hidden">
+    <img
+      src="Images/card6.png"
+      alt="Productive Desk Setup"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- image glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <div
+      class="text-[11px] uppercase tracking-[0.18em]
+             text-stone-700
+             bg-gradient-to-r from-slate-200 to-orange-50
+             border border-white/40
+             shadow-sm
+             inline-block px-2 py-1 rounded-full"
+    >
+      Life Design
+    </div>
+
+    <h3 class="mt-2 text-lg font-semibold leading-snug text-stone-900">
+      The Dream of Time Freedom
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Read more</span>
+      <span class="ml-2 text-xs">→</span>
+    </div>
+  </div>
+</a>
       </div>
     </section>
 
@@ -379,10 +512,6 @@
         <div
           class="flex items-center justify-center gap-2 text-sm text-stone-600"
         >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-            >🎓</span
-          >
           <span class="uppercase tracking-[0.2em] text-xs">Courses</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-semibold mt-3">
@@ -479,10 +608,6 @@
         <div
           class="flex items-center justify-center gap-2 text-sm text-stone-600"
         >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-            >🎙</span
-          >
           <span class="uppercase tracking-[0.2em] text-xs">Podcast</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-semibold mt-3">
@@ -521,10 +646,6 @@
         <div
           class="flex items-center justify-center gap-2 text-sm text-stone-600"
         >
-          <span
-            class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-            >▶</span
-          >
           <span class="uppercase tracking-[0.2em] text-xs">YouTube</span>
         </div>
         <h2 class="text-3xl md:text-4xl font-semibold mt-3">
@@ -539,78 +660,131 @@
 
   <!-- Card 1 -->
   <a
-    href="https://youtu.be/vqGGXn3T9JE"
-    target="_blank"
-    class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-  >
-    <div class="aspect-video bg-stone-200 relative">
-      <img
-        src = "Images/million.png"
-        alt="How I Plan to Turn My PhD Stipend Into Millions"
-        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div class="absolute inset-0 flex items-center justify-center">
-        <span class="text-white text-4xl bg-black/50 rounded-full px-4 py-2">
-          ▶
-        </span>
-      </div>
+  href="https://youtu.be/vqGGXn3T9JE"
+  target="_blank"
+  rel="noreferrer"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- thumbnail -->
+  <div class="relative aspect-video w-full overflow-hidden">
+    <img
+      src="Images/million.png"
+      alt="How I Plan to Turn My PhD Stipend Into Millions"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <h3 class="font-semibold text-sm md:text-base text-stone-900 leading-snug">
+      How I Plan to Turn My PhD Stipend Into Millions
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Watch now</span>
+      <span class="ml-2 text-xs">→</span>
     </div>
-    <div class="p-5">
-      <h3 class="font-semibold text-sm md:text-base">
-        How I Plan to Turn My PhD Stipend Into Millions
-      </h3>
-    </div>
-  </a>
+  </div>
+</a>
 
   <!-- Card 2 -->
   <a
-    href="https://youtu.be/ufALIXcVZjQ"
-    target="_blank"
-    class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-  >
-    <div class="aspect-video bg-stone-200 relative">
-      <img
-        src = "Images/fail.png"
-        alt="Video Title 2"
-        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div class="absolute inset-0 flex items-center justify-center">
-        <span class="text-white text-4xl bg-black/50 rounded-full px-4 py-2">
-          ▶
-        </span>
-      </div>
+  href="https://youtu.be/ufALIXcVZjQ"
+  target="_blank"
+  rel="noreferrer"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- thumbnail -->
+  <div class="relative aspect-video w-full overflow-hidden">
+    <img
+      src="Images/fail.png"
+      alt="How I failed in 2025"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <h3 class="font-semibold text-sm md:text-base text-stone-900 leading-snug">
+      How I failed in 2025
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Watch now</span>
+      <span class="ml-2 text-xs">→</span>
     </div>
-    <div class="p-5">
-      <h3 class="font-semibold text-sm md:text-base">
-        How I failed in 2025
-      </h3>
-    </div>
-  </a>
+  </div>
+</a>
+
 
   <!-- Card 3 -->
   <a
-    href="https://youtu.be/yUsEPQyyzXQ"
-    target="_blank"
-    class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-md transition"
-  >
-    <div class="aspect-video bg-stone-200 relative">
-      <img
-        src="Images/Advice.png"
-        alt="Video Title 3"
-        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-      />
-      <div class="absolute inset-0 flex items-center justify-center">
-        <span class="text-white text-4xl bg-black/50 rounded-full px-4 py-2">
-          ▶
-        </span>
-      </div>
+  href="https://youtu.be/yUsEPQyyzXQ"
+  target="_blank"
+  rel="noreferrer"
+  class="group relative block overflow-hidden rounded-3xl
+         bg-white/10 backdrop-blur-xl
+         border border-white/20
+         shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+         hover:shadow-[0_20px_60px_rgba(0,0,0,0.14)]
+         transition-all duration-300"
+>
+  <!-- soft liquid highlights -->
+  <div class="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute -top-24 -left-24 h-64 w-64 rounded-full bg-white/25 blur-2xl"></div>
+    <div class="absolute -bottom-24 -right-24 h-64 w-64 rounded-full bg-orange-200/30 blur-2xl"></div>
+  </div>
+
+  <!-- thumbnail -->
+  <div class="relative aspect-video w-full overflow-hidden">
+    <img
+      src="Images/Advice.png"
+      alt="Honest Advice for Anyone Considering Graduate School"
+      class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+    />
+    <!-- glass overlay -->
+    <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/25 via-black/0 to-white/10"></div>
+  </div>
+
+  <!-- content -->
+  <div class="relative p-5">
+    <h3 class="font-semibold text-sm md:text-base text-stone-900 leading-snug">
+      Honest Advice for Anyone Considering Graduate School
+    </h3>
+
+    <div class="mt-3 inline-flex items-center text-sm text-stone-600 group-hover:text-stone-900 transition">
+      <span>Watch now</span>
+      <span class="ml-2 text-xs">→</span>
     </div>
-    <div class="p-5">
-      <h3 class="font-semibold text-sm md:text-base">
-        Honest Advice for Anyone Considering Graduate School
-      </h3>
-    </div>
-  </a>
+  </div>
+</a>
+
 
 </div>
 
@@ -622,34 +796,34 @@
             <div
               class="flex items-center gap-2 text-sm text-stone-600 mb-2 justify-start"
             >
-              <span
-                class="inline-flex h-4 w-4 items-center justify-center rounded-full border border-stone-300 text-[9px]"
-                >🚀</span
-              >
               <span class="uppercase tracking-[0.2em] text-xs">About</span>
             </div>
             <h2 class="text-3xl md:text-4xl font-semibold">Hey, I’m Ayush 👋</h2>
           </div>
           <p class="text-stone-700 leading-relaxed text-sm md:text-base">
-            I’m a fifth-year PhD student and part-time YouTuber. I share
+            I am a fifth-year PhD student and part-time YouTuber. I share
             playbooks for doing high-quality research, building a creator
-            business, and living with autonomy. On this site you’ll find essays,
+            business, and living with autonomy. On this site you will find essays,
             videos, and courses that help you earn back your time while moving
             your work forward.
           </p>
           <div class="mt-6 flex flex-wrap items-center gap-3">
             <a
               href="#newsletter"
-              class="rounded-2xl bg-amber-900 text-white px-5 py-3 font-medium inline-flex items-center gap-2 hover:bg-amber-800 text-sm"
+              class="hidden sm:inline-flex items-center rounded-full px-4 py-2 text-sm font-medium
+           bg-gradient-to-r from-slate-200 to-orange-50
+           text-stone-700 hover:opacity-90 transition"
             >
-              <span>✉</span>
-              <span>Join the newsletter</span>
+              <span> </span>
+              <span>Join the Newsletter</span>
             </a>
             <a
               href="#blog"
-              class="rounded-2xl border border-stone-300 px-5 py-3 font-medium inline-flex items-center gap-2 bg-white/60 text-sm"
+              class="hidden sm:inline-flex items-center rounded-full px-4 py-2 text-sm font-medium
+           bg-gradient-to-r from-slate-200 to-orange-50
+           text-stone-700 hover:opacity-90 transition"
             >
-              <span>📖</span>
+              <span> </span>
               <span>Read the blog</span>
             </a>
           </div>
@@ -671,11 +845,11 @@
         <div class="md:col-span-2">
           <div class="flex items-center gap-3">
             <img
-              src="https://placehold.co/120x40?text=AA"
+              src="Images/256X256.svg"
               alt="Logo"
               class="h-6"
             />
-            <span class="font-semibold">Ayush Acharya</span>
+            <span class="font-semibold bg-gradient-to-l from-neutral-300 to-stone-400 bg-clip-text text-transparent">AYUSH ACHARYA</span>
           </div>
           <p class="mt-3 text-sm text-stone-600 max-w-sm">
             Essays, videos, and courses on research systems, creative careers,
@@ -689,7 +863,7 @@
               >X</a
             >
             <a
-              href="https://youtube.com/"
+              href="https://www.youtube.com/channel/UCSWXIGE2teo8F84zjFjDukA"
               aria-label="YouTube"
               class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
               >▶</a
@@ -701,7 +875,7 @@
               >◎</a
             >
             <a
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/ayushacharyaa/"
               aria-label="LinkedIn"
               class="p-2 rounded-full border border-stone-200 hover:bg-stone-50 text-xs w-8 h-8 flex items-center justify-center"
               >in</a
